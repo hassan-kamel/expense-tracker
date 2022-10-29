@@ -4,7 +4,7 @@ import Transaction from './Transaction';
 
 const TransactionList = () => {
   const { transactions, setTransactions } = useContext(TransactionsContext);
-  console.log('transactions: ', transactions);
+  // console.log('transactions: ', transactions);
   const deleteTransaction = (transaction) => {
     setTransactions(
       transactions.filter((trans) => {
@@ -17,7 +17,7 @@ const TransactionList = () => {
     <>
       <h3>History</h3>
       <ul className='list'>
-        {transactions.map((transaction, index) => {
+        {transactions?.map((transaction, index) => {
           return (
             <Transaction
               key={index}

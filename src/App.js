@@ -9,12 +9,18 @@ function App() {
   return (
     <>
       <Transactions>
-        <Header />
-        <div className='cointainer'>
-          <Balance />
-          <IncomeExpenses />
-          <TransactionList />
-          <AddTransaction />
+        <div className='container'>
+          <Header />
+          <div className='app'>
+            <div className='read'>
+              <Balance />
+              <IncomeExpenses />
+              <TransactionList />
+            </div>
+            <div className='write'>
+              <AddTransaction />
+            </div>
+          </div>
         </div>
       </Transactions>
     </>
